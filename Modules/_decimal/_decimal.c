@@ -33,7 +33,7 @@
 #include "pycore_long.h"          // _PyLong_IsZero()
 #include "pycore_pystate.h"       // _PyThreadState_GET()
 #include "complexobject.h"
-#include "mpdecimal.h"
+#include <mpdecimal.h>
 
 #include <ctype.h>                // isascii()
 #include <stdlib.h>
@@ -4804,6 +4804,7 @@ dec_floor(PyObject *self, PyObject *dummy UNUSED)
 static Py_hash_t
 _dec_hash(PyDecObject *v)
 {
+#define CONFIG_64
 #if defined(CONFIG_64) && _PyHASH_BITS == 61
     /* 2**61 - 1 */
     mpd_uint_t p_data[1] = {2305843009213693951ULL};

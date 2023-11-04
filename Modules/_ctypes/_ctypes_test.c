@@ -20,7 +20,7 @@
 #include <stdlib.h>               // qsort()
 #include <string.h>               // memset()
 #ifdef MS_WIN32
-#  include <windows.h>
+#include <windows.h>
 #endif
 
 #define EXPORT(x) Py_EXPORTED_SYMBOL x

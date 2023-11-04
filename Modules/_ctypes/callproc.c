@@ -71,6 +71,7 @@ module _ctypes
 #ifdef MS_WIN32
 #include <windows.h>
 #include <tchar.h>
+#pragma comment (lib, "OleAut32.lib")
 #else
 #include <dlfcn.h>
 #endif

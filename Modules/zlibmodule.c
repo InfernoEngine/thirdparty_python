@@ -9,7 +9,7 @@
 
 #include "Python.h"
 
-#include "zlib.h"
+#include <zlib.h>
 #include "stdbool.h"
 #include <stddef.h>               // offsetof()
 

@@ -10,6 +10,7 @@
 #ifdef MS_WINDOWS
 #  include <windows.h>
 #  include <bcrypt.h>
+#  pragma comment (lib, "Bcrypt.lib")
 #else
 #  include <fcntl.h>              // O_RDONLY
 #  ifdef HAVE_SYS_STAT_H

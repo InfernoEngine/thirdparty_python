@@ -47,6 +47,7 @@ Data members:
 #ifdef MS_WINDOWS
 #  define WIN32_LEAN_AND_MEAN
 #  include <windows.h>
+#pragma comment (lib, "Version.lib")
 #endif /* MS_WINDOWS */
 
 #ifdef MS_COREDLL
@@ -3413,7 +3414,7 @@ _PySys_InitCore(PyThreadState *tstate, PyObject *sysdict)
     /* getwindowsversion */
     ENSURE_INFO_TYPE(WindowsVersionType, windows_version_desc);
 
-    SET_SYS_FROM_STRING("_vpath", VPATH);
+    SET_SYS_FROM_STRING("_vpath", "..\\..");
 #endif
 
 #undef ENSURE_INFO_TYPE

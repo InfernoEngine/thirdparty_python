@@ -18,6 +18,7 @@
 #  else
 #    include <pathcch.h>            // PathCchCombineEx
 #  endif
+#  pragma comment (lib, "Pathcch.lib")
 extern int winerror_to_errno(int);
 #endif
 

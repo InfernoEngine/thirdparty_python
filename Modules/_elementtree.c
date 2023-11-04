@@ -20,7 +20,7 @@
 #include "pycore_pyhash.h"        // _Py_HashSecret
 
 #include <stddef.h>               // offsetof()
-#include "expat.h"
+#include "expat/expat.h"
 #include "pyexpat.h"
 
 /* -------------------------------------------------------------------- */

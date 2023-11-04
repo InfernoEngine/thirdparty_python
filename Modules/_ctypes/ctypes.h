@@ -9,6 +9,8 @@
 #define PARAMFLAG_FIN 0x1
 #define PARAMFLAG_FOUT 0x2
 #define PARAMFLAG_FLCID 0x4
+#else
+#include <unknwn.h>
 #endif
 
 /*

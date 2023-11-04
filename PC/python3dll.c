@@ -8,10 +8,15 @@
 #define DECORATE
 #endif
 
+#if 0
 #define EXPORT_FUNC(name) \
     __pragma(comment(linker, "/EXPORT:" DECORATE #name "=" PYTHON_DLL_NAME "." #name))
 #define EXPORT_DATA(name) \
     __pragma(comment(linker, "/EXPORT:" DECORATE #name "=" PYTHON_DLL_NAME "." #name ",DATA"))
+#else
+#define EXPORT_FUNC(name)
+#define EXPORT_DATA(name)
+#endif
 
 EXPORT_FUNC(_Py_BuildValue_SizeT)
 EXPORT_FUNC(_Py_CheckRecursiveCall)

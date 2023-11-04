@@ -35,6 +35,8 @@
 #  endif
 #  include <winioctl.h>
 #  include <lmcons.h>             // UNLEN
+#  include <corecrt.h>            // UNLEN
+#  include <corecrt_io.h>         // UNLEN
 #  include "osdefs.h"             // SEP
 #  if defined(MS_WINDOWS_DESKTOP) || defined(MS_WINDOWS_SYSTEM)
 #    define HAVE_SYMLINK

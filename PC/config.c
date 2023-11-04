@@ -95,14 +95,14 @@ struct _inittab _PyImport_Inittab[] = {
     {"faulthandler", PyInit_faulthandler},
     {"gc", PyInit_gc},
     {"math", PyInit_math},
-    {"nt", PyInit_nt}, /* Use the NT os functions, not posix */
+    //{"nt", PyInit_nt}, /* Use the NT os functions, not posix */
     {"_operator", PyInit__operator},
     {"_signal", PyInit__signal},
-    {"_md5", PyInit__md5},
-    {"_sha1", PyInit__sha1},
-    {"_sha2", PyInit__sha2},
-    {"_sha3", PyInit__sha3},
-    {"_blake2", PyInit__blake2},
+    //{"_md5", PyInit__md5},
+    //{"_sha1", PyInit__sha1},
+    //{"_sha2", PyInit__sha2},
+    //{"_sha3", PyInit__sha3},
+    //{"_blake2", PyInit__blake2},
     {"_sysconfig", PyInit__sysconfig},
     {"time", PyInit_time},
     {"_thread", PyInit__thread},
@@ -127,10 +127,10 @@ struct _inittab _PyImport_Inittab[] = {
     {"_collections", PyInit__collections},
     {"_symtable", PyInit__symtable},
 #if defined(MS_WINDOWS_DESKTOP) || defined(MS_WINDOWS_GAMES)
-    {"mmap", PyInit_mmap},
+    //{"mmap", PyInit_mmap},
 #endif
     {"_csv", PyInit__csv},
-    {"_sre", PyInit__sre},
+    //{"_sre", PyInit__sre},
 #if defined(MS_WINDOWS_DESKTOP) || defined(MS_WINDOWS_SYSTEM) || defined(MS_WINDOWS_GAMES)
     {"winreg", PyInit_winreg},
 #endif
@@ -147,13 +147,13 @@ struct _inittab _PyImport_Inittab[] = {
 #endif
 
     /* CJK codecs */
-    {"_multibytecodec", PyInit__multibytecodec},
-    {"_codecs_cn", PyInit__codecs_cn},
-    {"_codecs_hk", PyInit__codecs_hk},
-    {"_codecs_iso2022", PyInit__codecs_iso2022},
-    {"_codecs_jp", PyInit__codecs_jp},
-    {"_codecs_kr", PyInit__codecs_kr},
-    {"_codecs_tw", PyInit__codecs_tw},
+    //{"_multibytecodec", PyInit__multibytecodec},
+    //{"_codecs_cn", PyInit__codecs_cn},
+    //{"_codecs_hk", PyInit__codecs_hk},
+    //{"_codecs_iso2022", PyInit__codecs_iso2022},
+    //{"_codecs_jp", PyInit__codecs_jp},
+    //{"_codecs_kr", PyInit__codecs_kr},
+    //{"_codecs_tw", PyInit__codecs_tw},
 
 /* tools/freeze/makeconfig.py marker for additional "_inittab" entries */
 /* -- ADDMODULE MARKER 2 -- */

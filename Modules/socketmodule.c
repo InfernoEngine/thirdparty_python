@@ -472,6 +472,8 @@ remove_unusable_flags(PyObject *m)
 #ifdef MS_WIN32
 #  undef EAFNOSUPPORT
 #  define EAFNOSUPPORT WSAEAFNOSUPPORT
+#pragma comment (lib, "Rpcrt4.lib")
+#pragma comment (lib, "Iphlpapi.lib")
 #endif
 
 #ifndef SOCKETCLOSE

@@ -26,6 +26,8 @@
 #  define T_POINTER Py_T_ULONGLONG
 #endif
 
+#pragma comment(lib, "Ws2_32.lib")
+
 #define F_HANDLE F_POINTER
 #define F_ULONG_PTR F_POINTER
 #define F_DWORD "k"
