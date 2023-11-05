@@ -301,6 +301,7 @@ Py_NO_ENABLE_SHARED to find out.  Also support MS_NO_COREDLL for b/w compat */
 
 /* For an MSVC DLL, we can nominate the .lib files used by extensions */
 #ifdef MS_COREDLL
+#if 0 // not needed in Onion build system
 #       if !defined(Py_BUILD_CORE) && !defined(Py_BUILD_CORE_BUILTIN)
                 /* not building the core - must be an ext */
 #               if defined(_MSC_VER)
@@ -316,6 +317,7 @@ Py_NO_ENABLE_SHARED to find out.  Also support MS_NO_COREDLL for b/w compat */
 #                       endif /* _DEBUG */
 #               endif /* _MSC_VER */
 #       endif /* Py_BUILD_CORE */
+#endif
 #endif /* MS_COREDLL */
 
 #ifdef MS_WIN64
